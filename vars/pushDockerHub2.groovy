@@ -10,11 +10,7 @@ pipeline {
   }
   stages {
   
-  stage('get scm') {
-      steps {
-	  git branch: 'main', credentialsId: 'github_new_credentials', url: 'https://github.com/jmstechhome25/${projectName}.git'
-       }
-    }
+
     stage('Building image') {
       steps{
         script {
