@@ -1,4 +1,4 @@
-def baseUrl = "https://github.com/ybmadhu/"
+def baseUrl = "https://github.com/jmstechhome25/"
 def repoName = "$reponame"
 def gitRepoUrl= baseUrl + repoName + '.git'
 def jobName = "$reponame"
@@ -24,7 +24,7 @@ def jobName = "$reponame"
                             url(gitRepoUrl)
                             credentials('git_credentials')
                         }
-                        branches('master')
+                        branches('main')
                         extensions {
                             cleanBeforeCheckout()
                         }
